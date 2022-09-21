@@ -31,6 +31,11 @@ class GUI(Tk):
         self.wm_iconbitmap(config.ICON)
         self.config(bg="white")
         self.__gui()
+        self.__verify()
+
+    def __verify(self):
+        if config.TOKEN_INSERTED == False:
+            obb=TokenAcceptor(self)
 
     def __gui(self):
         self.img = Image.open(config.LOGO).resize((200, 90))
@@ -136,3 +141,30 @@ class GUI(Tk):
 
         
 
+class TokenAcceptor():
+    def __init__(self,window):
+        self.win=window
+        self.win.attributes="-disabled"
+        h=int(self.win.winfo_height()/2)
+        w=int(self.win.winfo_width()/2)
+        # self.__createfile()
+        self.tp=Toplevel(self.win,bg="white")
+        self.tp.title("Token Acceptor")
+        self.tp.geometry(f"250x110+{w}+{h}")
+        self.tp.iconbitmap(config.ICON)
+        self.tp.resizable(False,False)
+        self.tp.protocol("WM_DELETE_WINDOW",lambda : sys.exit(0))
+        Label(self.tp,text="Enter Your Github API Token :",font=("times new roman",12),bg="white").pack(side="left",anchor="n",pady=5)
+        self.token=Entry(self.tp,bg="white",relief="solid",font=("calibri",12),width=25)
+        self.token.place(x=10,y=30)
+        Button(self.tp,text="OK",font="Arial 14",command=self.__createfile).place(x=20,y=60)
+        Button(self.tp,text="CANCEL",font="Arial 14",command=lambda :sys.exit(0)).place(x=90,y=60)
+
+
+    def __createfile(self):
+        if self.token.get()=="" or self.token.get()==" ":
+            messagebox.showerror("Error","Enter Valid Token")
+        else:
+            with open("config.env", "w") as f:
+                f.write(f"TOKEN={self.token.get()}")
+            self.tp.destroy()

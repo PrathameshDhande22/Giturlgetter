@@ -1,4 +1,7 @@
+import sys
 from tkinter import *
+from tkinter import simpledialog
+from tkinter import messagebox
 from extractor import GTExtract
 import config
 from PIL import Image, ImageTk
@@ -19,20 +22,15 @@ class TokenNotGivenException(Exception):
 class GUI(Tk):
 
     def __init__(self):
-
+        
         super().__init__()
-        self.__verify()
+        
         self.geometry("600x500+400+140")
         self.title("Github URL Extractor")
         self.minsize(width=600, height=500)
         self.wm_iconbitmap(config.ICON)
         self.config(bg="white")
-
         self.__gui()
-
-    def __verify(self):
-        if config.TOKEN_INSERTED == False:
-            raise TokenNotGivenException
 
     def __gui(self):
         self.img = Image.open(config.LOGO).resize((200, 90))
@@ -110,11 +108,12 @@ class GUI(Tk):
             self.setStatusbar("NO Username Found")
         else:
             self.setStatusbar("Username Found")
+            self.setStatusbar("Gettings all Repositories...")
             for repo in self.exdata.get_all_user_repos:
                 self.getRepos(repo.name)
 
     def getGiturl(self):
-        self.setStatusbar("Generating Url")
+        self.setStatusbar("Generating Url...")
         index = self.listofrepos.curselection()
         reponame = self.listofrepos.get(index[0])
         self.giturl.set(self.exdata.geturl(reponame, self.uname))
@@ -134,3 +133,6 @@ class GUI(Tk):
 
     def delrepolst(self):
         self.listofrepos.delete(0, END)
+
+        
+

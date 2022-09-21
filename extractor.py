@@ -1,10 +1,11 @@
-import config
-from github import Github, GithubException, UnknownObjectException, BadCredentialsException
+from tkinter import messagebox
+from requests import ConnectionError
+from github import Github,UnknownObjectException
 
 
 class GTExtract(Github):
     def __init__(self):
-        super().__init__(config.TOKEN)
+        super().__init__()
 
     def isValidUser(self, name):
         try:
@@ -13,14 +14,16 @@ class GTExtract(Github):
         except UnknownObjectException as ex:
             if ex.status == 404:
                 return False
-        except BadCredentialsException as e:
-            if e.status == 401:
-                print("Token are not valid please create it")
-                creater = config.TokenAcceptor()
+        except ConnectionError as c:
+            messagebox.showerror('Internet Connection',"Please Connect to the Internet")
+        
 
     @property
     def get_all_user_repos(self):
-        return self.username.get_repos()
+        try:
+            return self.username.get_repos()
+        except AttributeError as a:
+            return False
 
     def geturl(self, reponame, uname):
         repo = f"{uname}/{reponame}"

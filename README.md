@@ -10,7 +10,7 @@
 
 A GUI to extract the Git URL of the Entered GitHub Username. Easy Interface and Easy to Use.</br>
 Made Using the Python and Backend Used is PyGithub Library.</br></br>
-You Can Either Download My Git URL EXTRACTOR V1.0 from my GitHub Release. </br>Click Here to Download.</br>
+You Can Either Download My Git URL EXTRACTOR V1.0 from my GitHub Release. </br>Click Here to <a href="https://github.com/PrathameshDhande22/Git-URL-Extractor-using-Python/releases/download/v1.0/Git.Url.Extractor.exe">Download</a>.</br>
 
 To Install PyGithub:</br>
 ```

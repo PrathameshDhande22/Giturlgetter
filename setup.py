@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="Giturlgetter",
-version="0.1",
+version="0.2",
 description="Command Line to Extract the git url",
 author="Prathamesh Dhande",
 author_email='prathameshdhande534@gmail.com',

@@ -25,6 +25,7 @@ class GTExtract(Github):
                 sys.exit(0)
         except ConnectionError :
             print("Please Connect to The Internet")
+            sys.exit(0)
 
     @property
     def get_all_user_repos(self):
@@ -34,6 +35,15 @@ class GTExtract(Github):
         repo = f"{uname}/{reponame}"
         return self.get_repo(repo).clone_url
 
+HELP="""
+Get The Github API token From github Setting
+Paste the code
+
+Using this Script you can Generate the Git url Which will automate the work of the Github.
+
+For More Information Visit :
+https://github.com/PrathameshDhande22/Git-URL-Extractor-using-Python
+"""
 
 def main():
     obj=GTExtract()
@@ -53,7 +63,8 @@ def menu(obj):
         while True:
                 choice=int(input('''\nEnter The following Commands 
                 1. Get git URL
-                2. Exit\n
+                2. Exit
+                3. Help\n
 Enter Your Choice :'''))
                 if choice==1:
                     lstrepo.clear()
@@ -82,6 +93,9 @@ Enter Your Choice :'''))
                 elif choice==2:
                     print("Exiting..")
                     sys.exit(0)
+
+                elif choice==3:
+                    print(HELP)
     except ValueError:
         print("Enter the correct Choice")
         menu(obj)

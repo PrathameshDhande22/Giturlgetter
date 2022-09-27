@@ -4,7 +4,7 @@ with open("README.md",'r') as f:
   LNG=f.read()
 
 setup(name="Giturlgetter",
-version="0.2",
+version="0.3",
 description="Command Line to Extract the git url",
 author="Prathamesh Dhande",
 author_email='prathameshdhande534@gmail.com',

@@ -1,0 +1,2 @@
+[console_scripts]
+giturl = command_line.__main__:run

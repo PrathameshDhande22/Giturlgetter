@@ -1,10 +1,14 @@
 from setuptools import setup
 
+with open("README.md",'r') as f:
+  LNG=f.read()
+
 setup(name="Giturlgetter",
 version="0.2",
 description="Command Line to Extract the git url",
 author="Prathamesh Dhande",
 author_email='prathameshdhande534@gmail.com',
+long_description=LNG,
 long_description_content_type='text/markdown',
 packages=['command_line'],
 install_requires=['clipboard','PyGithub','requests'],

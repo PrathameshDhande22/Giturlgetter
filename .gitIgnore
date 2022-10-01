@@ -1,2 +1,2 @@
-build/*
-Giturlgetter.egg-info/*
+/build/*
+/Giturlgetter.egg-info/*

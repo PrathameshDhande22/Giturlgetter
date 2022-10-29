@@ -1,8 +1,9 @@
-
+import webbrowser
+import pyfiglet
 import sys
 from requests import ConnectionError
 from github import Github,UnknownObjectException,BadCredentialsException
-from .config import TOKEN,TOKEN_INSERTED,URL
+from .config import TOKEN,TOKEN_INSERTED,PATH
 import os
 import clipboard
 
@@ -21,7 +22,7 @@ class GTExtract(Github):
         except BadCredentialsException as e:
             if e.status == 401:
                 print("Please Enter the Valid Token\nRun The command Again to enter the Api Token")
-                os.remove("config.env")
+                os.remove(f"{PATH}\\config.env")
                 sys.exit(0)
         except ConnectionError :
             print("Please Connect to The Internet")
@@ -42,14 +43,22 @@ Paste the code
 Using this Script you can Generate the Git url Which will automate the work of the Github.
 
 For More Information Visit :
-https://github.com/PrathameshDhande22/Git-URL-Extractor-using-Python
+https://github.com/PrathameshDhande22/Giturlgetter
 """
 
 def main():
     obj=GTExtract()
     if TOKEN_INSERTED is False:
-        token=input("Enter the Github Api Token : ")
-        with open("config.env","w") as f:
+        webbrowser.open(r"https://github.com/settings/tokens")
+        try:
+            token=input("Paste the Github Api Token : ")
+        except KeyboardInterrupt as ki:
+            print("Exiting...")
+            sys.exit()
+        except EOFError:
+            print("Exiting..")
+            sys.exit()
+        with open(f"{PATH}\\config.env","w") as f:
             f.write(f"token={token}")
         print("Successfully entered the Token")
         menu(obj)
@@ -59,13 +68,22 @@ def main():
 def menu(obj):
     lstrepo=[]
     no=[]
+    text=pyfiglet.figlet_format("GITURLGETTER")
+    print(text)
     try:
         while True:
-                choice=int(input('''\nEnter The following Commands 
-                1. Get git URL
-                2. Exit
-                3. Help\n
+                try:
+                    choice=int(input('''\nEnter The following Commands 
+                    1. Get git URL
+                    2. Exit
+                    3. Help\n
 Enter Your Choice :'''))
+                except KeyboardInterrupt as ki:
+                    print("Exiting...")
+                    sys.exit()
+                except EOFError:
+                    print("Exiting..")
+                    sys.exit()
                 if choice==1:
                     lstrepo.clear()
                     no.clear()
@@ -77,7 +95,14 @@ Enter Your Choice :'''))
                             print(f"{index}\t{repo.name}")
                             lstrepo.append(repo.name)
                             no.append(index)
-                        ch=int(input("Enter the Repo Number :"))
+                        try:
+                            ch=int(input("Enter the Repo Number :"))
+                        except KeyboardInterrupt as ki:
+                            print("Exiting...")
+                            sys.exit()
+                        except EOFError:
+                            print("Exiting...")
+                            sys.exit()
                         if ch in no:
                             r=lstrepo[no[ch]]
                             url=obj.geturl(r,uname)

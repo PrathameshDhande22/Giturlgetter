@@ -1,27 +1,25 @@
 Metadata-Version: 2.1
 Name: Giturlgetter
-Version: 0.3
+Version: 0.4
 Summary: Command Line to Extract the git url
 Author: Prathamesh Dhande
 Author-email: prathameshdhande534@gmail.com
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
-Classifier: Programming Language :: Python :: 3.4
-Classifier: Programming Language :: Python :: 3.5
-Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
 # GIT URL GETTER
 
-![](https://img.shields.io/badge/Python-3.6_|_3.7_|_3.8_|_3.9_|_3.10-blue?logo=python&style=flat-square&logoColor=white)&nbsp;
+![](https://img.shields.io/badge/Python-3.8_|_3.9_|_3.10-blue?logo=python&style=flat-square&logoColor=white)&nbsp;
 ![](https://img.shields.io/badge/Github-API-red?logo=github&style=flat-square&logoColor=white)</br>
 
 
-<center>
-
 ![](https://img.shields.io/badge/MADE_WITH_%20-Python-f02b79%20?style=for-the-badge&logo=python&labelColor=Ff00d8&color=Ff0087&logoColor=white)
-</center>
+
 
 Github Has Released the **Github CLI (Command Line Interface)** using we can create the Github Repo in terminal only without Browsing the Browser.
 </br> </br>

@@ -1,13 +1,11 @@
 # GIT URL GETTER
 
-![](https://img.shields.io/badge/Python-3.6_|_3.7_|_3.8_|_3.9_|_3.10-blue?logo=python&style=flat-square&logoColor=white)&nbsp;
+![](https://img.shields.io/badge/Python-3.8_|_3.9_|_3.10-blue?logo=python&style=flat-square&logoColor=white)&nbsp;
 ![](https://img.shields.io/badge/Github-API-red?logo=github&style=flat-square&logoColor=white)</br>
 
 
-<center>
-
 ![](https://img.shields.io/badge/MADE_WITH_%20-Python-f02b79%20?style=for-the-badge&logo=python&labelColor=Ff00d8&color=Ff0087&logoColor=white)
-</center>
+
 
 Github Has Released the **Github CLI (Command Line Interface)** using we can create the Github Repo in terminal only without Browsing the Browser.
 </br> </br>

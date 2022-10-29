@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: Giturlgetter
-Version: 0.4
+Version: 0.4.1
 Summary: Command Line to Extract the git url
 Author: Prathamesh Dhande
 Author-email: prathameshdhande534@gmail.com

@@ -1,11 +1,14 @@
 Metadata-Version: 2.1
 Name: Giturlgetter
-Version: 0.4.1
+Version: 0.5
 Summary: Command Line to Extract the git url
+Home-page: https://github.com/PrathameshDhande22/Giturlgetter
 Author: Prathamesh Dhande
 Author-email: prathameshdhande534@gmail.com
+Keywords: git,git url,github api,url
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2.0
 Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.10
@@ -44,7 +47,7 @@ cd Giturlgetter
 Install Using the setup.py
 ```
 cd .\dist\
-pip install .\Giturlgetter-0.4-py3-none-any.whl
+pip install .\Giturlgetter-0.5-py3-none-any.whl
 ```
 You Have Successfully Installed the Library.
 </br>

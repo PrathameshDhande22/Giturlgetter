@@ -22,7 +22,7 @@ keywords=["git","git url","github api","url"],
 classifiers=[
     'Development Status :: 5 - Production/Stable',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',   
-    "License :: OSI Approved :: GNU General Public License v2.0",   # Define that your audience are developers   # Again, pick a license   #Specify which pyhton versions that you want to support
+    'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',   # Define that your audience are developers   # Again, pick a license   #Specify which pyhton versions that you want to support
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.10',

@@ -30,7 +30,7 @@ cd Giturlgetter
 Install Using the setup.py
 ```
 cd .\dist\
-pip install .\Giturlgetter-0.4-py3-none-any.whl
+pip install .\Giturlgetter-0.5-py3-none-any.whl
 ```
 You Have Successfully Installed the Library.
 </br>

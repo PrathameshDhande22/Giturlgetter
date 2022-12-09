@@ -4,14 +4,14 @@ with open("README.md",'r',encoding="UTF-8") as f:
   LNG=f.read()
 
 setup(name="Giturlgetter",
-version="1.0.5",
+version="1.0.6",
 description="Command Line to Extract the git url",
 author="Prathamesh Dhande",
 author_email='prathameshdhande534@gmail.com',
 long_description=LNG,
 long_description_content_type='text/markdown',
 packages=['command_line'],
-install_requires=['PyGithub','requests','pyfiglet','python-dotenv'],
+install_requires=['PyGithub','requests','pyfiglet','python-dotenv','click'],
 entry_points={
     'console_scripts': [
             'giturl=command_line.__main__:run',
@@ -20,7 +20,7 @@ entry_points={
 url="https://github.com/PrathameshDhande22/Giturlgetter",
 keywords=["git","git url","github api","url","git bash","clone url"],
 classifiers=[
-    'Development Status :: 3 - Alpha',      
+    'Development Status :: 5 - Production/Stable',      
     'Intended Audience :: Developers', 
     'Environment :: Console',  
     'Operating System :: Microsoft :: Windows :: Windows 11',

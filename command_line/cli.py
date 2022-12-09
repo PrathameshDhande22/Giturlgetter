@@ -11,10 +11,9 @@ try:
 except Exception:
     pass
 
-__version__="v1.0.1"
 
 @click.group(options_metavar='<OPTIONS>')
-@click.version_option(help="Shows the Version")
+@click.version_option(version="v1.0.5", help="Shows the Version", message="%(package)s, Version: %(version)s")
 @click.help_option("-h", "--help", help="To Get Help")
 def main():
     """Giturlgetter CLI to extract the Repository clone url.
@@ -184,4 +183,3 @@ def details(username):
         printuserDetails(uname)
     else:
         printuserDetails(username)
-

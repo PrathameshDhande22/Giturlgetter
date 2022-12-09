@@ -5,14 +5,16 @@ from .config import *
 from .extractor import GTExtract
 import sys
 
+
 try:
     c = GTExtract()
 except Exception:
     pass
 
+__version__="v1.0.1"
 
 @click.group(options_metavar='<OPTIONS>')
-@click.version_option(version="Version v1.0", message="Giturlgetter Version v1.0", help="Shows the Version")
+@click.version_option(help="Shows the Version")
 @click.help_option("-h", "--help", help="To Get Help")
 def main():
     """Giturlgetter CLI to extract the Repository clone url.

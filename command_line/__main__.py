@@ -1,4 +1,4 @@
-from .extractor import main
+from .cli import main
 
 def run():
     main()

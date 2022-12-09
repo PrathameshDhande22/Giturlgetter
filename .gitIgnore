@@ -1,3 +1,4 @@
 /build/*
 /Giturlgetter.egg-info/*
 /dist/*
+/command_line/__pycache__/*

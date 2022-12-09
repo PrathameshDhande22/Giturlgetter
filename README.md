@@ -1,9 +1,12 @@
 # GIT URL GETTER
 
 ![](https://img.shields.io/badge/Python-3.8_|_3.9_|_3.10-blue?logo=python&style=flat-square&logoColor=white)&nbsp;
-![](https://img.shields.io/badge/Github-API-red?logo=github&style=flat-square&logoColor=white)</br>
-
-
+![](https://img.shields.io/badge/Github-API-red?logo=github&style=flat-square&logoColor=white)
+&nbsp; ![GitHub repo size](https://img.shields.io/github/repo-size/prathameshdhande22/Giturlgetter?color=brown&logo=github&style=flat-square)
+&nbsp; ![PyPI - Downloads](https://img.shields.io/pypi/dd/giturlgetter?color=blue&logo=pypi&logoColor=white)
+&nbsp; ![PyPI - License](https://img.shields.io/pypi/l/giturlgetter?color=success&logo=pypi&logoColor=white)
+&nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/prathameshdhande22/giturlgetter?style=social)
+</br>
 ![](https://img.shields.io/badge/MADE_WITH_%20-Python-f02b79%20?style=for-the-badge&logo=python&labelColor=Ff00d8&color=Ff0087&logoColor=white)
 
 
@@ -67,12 +70,7 @@ git commit -m "First Commit"
 
 * After Installing the Giturlgetter library.</br>
 Run the Following command :
-```
-giturl
-```
-This will ask to Enter the Github API Token, So Generate The Token From [Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://github.com/settings/tokens&ved=2ahUKEwiFi6my3Kf6AhXRDKYKHaWKCAsQFnoECBcQAQ&usg=AOvVaw1aAJGUMBmPGH7oCTvgDvQv)</br>
-Let's Go.</br>
-Select the Option **1** To get the Git Url -> Enter the Github Username of which you want the URL -> After Generating the List of Repos -> Enter the Index Number of the Repository name -> After the Git URL will be copied to Your clipboard.
 
+Will be available after the release
 
 ## Author : Prathamesh Dhande

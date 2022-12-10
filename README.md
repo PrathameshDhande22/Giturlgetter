@@ -24,20 +24,7 @@ Install the Library from the command pip :
 ```
 pip install Giturlgetter
 ```
-Or Install using the git repository
-</br>
 
-Clone the Repository
-```
-git clone https://github.com/PrathameshDhande22/Giturlgetter.git
-cd Giturlgetter
-```
-
-Install Using the setup.py
-```
-cd .\dist\
-pip install .\Giturlgetter-0.5-py3-none-any.whl
-```
 You Have Successfully Installed the Library.
 </br>
 

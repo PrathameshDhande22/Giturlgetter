@@ -13,7 +13,7 @@ except Exception:
 
 
 @click.group(options_metavar='<OPTIONS>')
-@click.version_option(version="v1.0.5", help="Shows the Version", message="GITURLGETTER, Version: %(version)s")
+@click.version_option(version="v1.0.8", help="Shows the Version", message="GITURLGETTER, Version: %(version)s")
 @click.help_option("-h", "--help", help="To Get Help")
 def main():
     """Giturlgetter CLI to extract the Repository clone url.

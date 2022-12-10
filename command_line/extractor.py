@@ -1,6 +1,7 @@
 from github import Github, UnknownObjectException
 from .config import *
 from typing import Generator
+import requests
 
 
 class GTExtract(Github):
@@ -15,13 +16,17 @@ class GTExtract(Github):
             return True
         except UnknownObjectException:
             return False
+        except requests.ConnectionError:
+            return False
 
-    def getlist(self, name=None) -> Generator:
+    def getlist(self, name) -> Generator:
         try:
             repo = self.get_user(name).get_repos()
             for r in repo:
                 yield (r.id, r.full_name)
         except UnknownObjectException:
+            return False
+        except requests.ConnectionError:
             return False
 
     def getrepourl(self, value) -> list:
@@ -32,6 +37,8 @@ class GTExtract(Github):
             git_url = self.get_repo(value).git_url
             return list(zip(["Clone Url", "Website Url", "SSH Url", "Git Url"], [clone_url, url, ssh, git_url]))
         except UnknownObjectException:
+            return False
+        except requests.ConnectionError:
             return False
 
     def details(self, user_name):
@@ -44,4 +51,6 @@ class GTExtract(Github):
             return list(zip(list_op, list_ret))
 
         except UnknownObjectException:
+            return None
+        except requests.ConnectionError:
             return None

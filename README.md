@@ -75,7 +75,7 @@ git commit -m "First Commit"
 Run the Following command :
 
 ## Usage:
-<img src="https://ucarecdn.com/168c0769-f112-4623-b1d0-240ef1f6efc9/">
+<img src="./Images/giturlgetter.gif">
 
 ## Commands:
 1. `giturl login` -> To Login through Github with Activation Code.

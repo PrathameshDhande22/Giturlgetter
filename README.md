@@ -7,6 +7,7 @@
 &nbsp; ![PyPI - License](https://img.shields.io/pypi/l/giturlgetter?color=success&logo=pypi&logoColor=white)
 &nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/prathameshdhande22/giturlgetter?style=social)
 </br>
+
 ![](https://img.shields.io/badge/MADE_WITH_%20-Python-f02b79%20?style=for-the-badge&logo=python&labelColor=Ff00d8&color=Ff0087&logoColor=white)
 
 

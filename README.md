@@ -16,6 +16,8 @@ But in Github CLI you cannot get the git url so using **Giturlgetter** Python Li
 
 You Either Use the Python Library or the GUI which is in Another branch.</br>
 
+# Works For ![](https://ucarecdn.com/51bca072-f640-42c0-b316-f0c0d742779c/-/preview/30x30/) 10/11/7 Only.
+
 ## Installation :
 Install the Library from the command pip :
 ```
@@ -71,6 +73,21 @@ git commit -m "First Commit"
 * After Installing the Giturlgetter library.</br>
 Run the Following command :
 
-Will be available after the release
+## Usage:
+<img src="https://ucarecdn.com/168c0769-f112-4623-b1d0-240ef1f6efc9/">
+
+## Commands:
+1. `giturl login` -> To Login through Github with Activation Code.
+2. `giturl --version` -> To Get the Version Info.
+3. `giturl -h` -> To get help for any any command you can use `command -h`.
+4. `giturl logout` -> To Logout from the device.
+5. `giturl list --default` -> To list the user Repository Name and ID.
+6. `giturl list` -> Prompts the user to enter the username of the user to list the repositories Name and ID.
+7. `giturl repo` -> Prompts the user to enter the Repository name or ID to get the clone url, ssh url, html url, git url.
+8. `giturl repo -id,--id` or `giturl -n,--name` -> To get the urls.
+9. `giturl details` -> Prompts the User to enter the username and fetches entered username details.
+
+## Upcomming Version v1.0.10:
+More devices will supported
 
 ## Author : Prathamesh Dhande

@@ -75,7 +75,4 @@ Run the Following command :
 8. `giturl repo -id,--id` or `giturl -n,--name` -> To get the urls.
 9. `giturl details` -> Prompts the User to enter the username and fetches entered username details.
 
-## Upcomming Version v1.0.10:
-More devices will supported
-
 ## Author : Prathamesh Dhande

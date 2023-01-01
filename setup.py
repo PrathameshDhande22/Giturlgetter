@@ -4,7 +4,7 @@ with open("README.md",'r',encoding="UTF-8") as f:
   LNG=f.read()
 
 setup(name="Giturlgetter",
-version="1.0.9",
+version="1.0.10",
 description="Command Line to Extract the git url",
 author="Prathamesh Dhande",
 author_email='prathameshdhande534@gmail.com',
@@ -23,7 +23,8 @@ classifiers=[
     'Development Status :: 5 - Production/Stable',      
     'Intended Audience :: Developers', 
     'Environment :: Console',  
-    'Operating System :: Microsoft :: Windows :: Windows 11',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
     'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',   # Define that your audience are developers   # Again, pick a license   #Specify which pyhton versions that you want to support
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.8',
